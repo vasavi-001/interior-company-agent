@@ -131,3 +131,25 @@ interior_company_catalog.db — Source-of-truth catalog
 * No visual rendering generation
 * Single-room planning focus
 * Style scoring remains partially subjective
+
+## Submission Deliverables
+
+### Deliverable A — Runnable MVP
+- Streamlit application
+- Demo Mode available without API keys
+
+### Deliverable B — Evaluation Harness
+- Golden Dataset (25 cases)
+- Deterministic Scorers
+- Ship Gate Metrics
+- Results Report
+
+See: evaluation_report.md
+
+### Deliverable C — Decision Log
+- Scope decisions
+- AI tool usage
+- Production risks
+- Future roadmap
+
+See: decision_log.md
