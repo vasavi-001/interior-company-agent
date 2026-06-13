@@ -10,6 +10,78 @@ The solution prioritizes reliability, evaluation rigor, and explainability over 
 
 ---
 
+## Quick Demo
+
+If the application does not run immediately, start with the setup steps below to create and activate the virtual environment.
+
+1. Launch the application:
+
+```bash
+streamlit run app.py
+```
+
+2. Enable **Demo Mode** in the sidebar
+
+3. Select:
+
+```text
+BR-01
+```
+
+4. Click:
+
+```text
+Generate Design
+```
+
+5. Review:
+
+* Design rationale
+* Product recommendations
+* Budget summary
+* Bill of Quantities (BOQ)
+
+---
+
+## Setup
+
+### Create Virtual Environment
+
+```bash
+python3 -m venv .venv
+```
+
+### Activate Virtual Environment
+
+```bash
+source .venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Evaluation Harness
+
+```bash
+python evals.py
+```
+
+### Launch Application
+
+```bash
+streamlit run app.py
+```
+
+### Demo Mode
+
+If no OpenAI API key is available, enable **Demo Mode** from the sidebar. Demo Mode provides deterministic recommendations and allows the full application and evaluation workflow to be tested without external API dependencies.
+
+   
+---
+
 ## Architecture
 
 Customer Brief
@@ -81,30 +153,6 @@ The project includes:
 * Layout Validation Checks
 * Guardrail Validation Checks
 * Ship Gate Metrics
-
----
-
-## Setup
-
-### Create Virtual Environment
-
-python3 -m venv .venv
-
-source .venv/bin/activate
-
-### Install Dependencies
-
-pip install -r requirements.txt
-
-### Run Evaluation Harness
-
-python evals.py
-
-### Launch Application
-
-streamlit run app.py
-
-Enable Demo Mode in the sidebar if no API key is available.
 
 ---
 
